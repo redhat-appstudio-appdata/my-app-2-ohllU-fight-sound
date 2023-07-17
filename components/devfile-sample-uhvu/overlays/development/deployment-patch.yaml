@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uhvu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/qe-chuo-tenant/my-app-2/devfile-sample-uhvu@sha256:721867eb8be0cf9d0f6bb430b299fb3a1b22defe881b5047753633b810720d86
+        name: my-nodejs
+        resources: {}
+status: {}
