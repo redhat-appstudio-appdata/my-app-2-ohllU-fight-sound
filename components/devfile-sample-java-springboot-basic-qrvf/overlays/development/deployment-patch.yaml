@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-qrvf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/qe-chuo-tenant/my-app-2/devfile-sample-java-springboot-basic-qrvf@sha256:95c0f152ba6bc470323524aeffc4646bb0e6e730e7974a4b31a195712aecd5c5
+        name: my-java-springboot
+        resources: {}
+status: {}
