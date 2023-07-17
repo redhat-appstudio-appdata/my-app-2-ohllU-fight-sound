@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-hiqy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/qe-chuo-tenant/my-app-2/devfile-sample-go-basic-hiqy@sha256:26c0ac6d3a5f10f43648523ca284ddd74e02595857514d8bb336fa2d47572c7d
+        name: my-go
+        resources: {}
+status: {}
